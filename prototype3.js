@@ -1,3 +1,5 @@
+alert("javascript is working!");
+
 // Import the functions we need
 import {fetchWord} from "./functions.js";
 
