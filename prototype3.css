@@ -1,0 +1,95 @@
+#lane_wrapper
+{
+    height: 60vh;
+}
+
+p
+{
+    margin: 0;
+    padding: 0;
+}
+
+html, body
+{
+    height: 100%;
+    margin: 0;
+}
+
+#full_box
+{
+    min-height: 100%;
+    
+    background-color: red;
+}
+
+#score
+{
+    display: block;
+    height: 10vh;
+    background-color: blue;
+}
+
+#lane1
+{
+    
+    display: inline-block;
+    width:19%;
+    height: 60vh;
+    background-color: aquamarine;
+}
+
+#lane2
+{
+    display: inline-block;
+    width:19%;
+    height: 60vh;
+    background-color: brown;
+}
+
+#lane3
+{
+    display: inline-block;
+    width:19%;
+    height: 60vh;
+    background-color: blueviolet;
+}
+
+#lane4
+{
+    display: inline-block;
+    width:19%;
+    height: 60vh;
+    background-color: chartreuse;    
+}
+
+#lane5
+{
+    display: inline-block;
+    width:19%;
+    height: 60vh;
+    background-color: crimson;
+}
+
+#user_word
+{
+    height: 10vh;
+    background-color: cyan;
+}
+
+#strikes
+{
+    height: 10vh;
+    background-color: darkgreen;
+}
+
+#combo
+{
+    height: 10vh;
+    background-color: gold;
+}
+
+#lane_wrapper
+{
+   
+    text-align: center;
+}
