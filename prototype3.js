@@ -11,4 +11,5 @@ setInterval(addWordsOnInterval(), 1000);
 
 function addWordsOnInterval(){
     fetchWord(activeWords);
+    console.log(activeWords);
 }
