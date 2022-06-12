@@ -7,7 +7,7 @@ import {fetchWord} from "./functions.js";
 var activeWords = [];
 var nextWord;
 
-setInterval(addWordsOnInterval(), 1000);
+setInterval(addWordsOnInterval, 1000);
 
 function addWordsOnInterval(){
     fetchWord(activeWords);
