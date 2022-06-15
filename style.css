@@ -1,0 +1,140 @@
+#lane_wrapper
+{
+    height: 60vh;
+}
+
+p
+{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+html, body
+{
+    height: 100%;
+    margin: 0;
+}
+
+#full_box
+{
+    min-height: 100%;
+    
+    /* UNCOMMENT TO TURN COLORS ON FOR TROUBLESHOOTING background-color: red;*/ 
+}
+
+#score
+{
+    border-radius: 25px;
+    border: 2px solid #000000;
+    font-size: 40px;
+    font-family: consolas;
+    display: block;
+    height: 10vh;
+    /* UNCOMMENT TO TURN COLORS ON FOR TROUBLESHOOTING background-color: blue;*/
+    text-align: center;
+}
+
+#lane1
+{
+    border-radius: 25px;
+    border: 2px solid #000000;
+    vertical-align: top;
+    font-family: consolas;
+    font-size: 40px;
+    display: inline-block;
+    width:19%;
+    height: 60vh;
+    /* UNCOMMENT TO TURN COLORS ON FOR TROUBLESHOOTING background-color: aquamarine;*/
+}
+
+#lane2
+{
+    border-radius: 25px;
+    border: 2px solid #000000;
+    vertical-align: top;
+    font-family: consolas;
+    font-size: 40px;
+    display: inline-block;
+    width:19%;
+    height: 60vh;
+    /* UNCOMMENT TO TURN COLORS ON FOR TROUBLESHOOTING background-color: brown;*/
+}
+
+#lane3
+{
+    border-radius: 25px;
+    border: 2px solid #000000;
+    vertical-align: top;
+    font-family: consolas;
+    font-size: 40px;
+    display: inline-block;
+    width:19%;
+    height: 60vh;
+    /* UNCOMMENT TO TURN COLORS ON FOR TROUBLESHOOTING background-color: blueviolet;*/
+}
+
+#lane4
+{
+    border-radius: 25px;
+    border: 2px solid #000000;
+    vertical-align: top;
+    font-family: consolas;
+    font-size: 40px;
+    display: inline-block;
+    width:19%;
+    height: 60vh;
+    /* UNCOMMENT TO TURN COLORS ON FOR TROUBLESHOOTING background-color: chartreuse;  */  
+}
+
+#lane5
+{
+    border-radius: 25px;
+    border: 2px solid #000000;
+    vertical-align: top;
+    font-family: consolas;
+    font-size: 40px;
+    display: inline-block;
+    width:19%;
+    height: 60vh;
+    /* UNCOMMENT TO TURN COLORS ON FOR TROUBLESHOOTING background-color: crimson;*/
+}
+
+#user_word
+{
+    border-radius: 25px;
+    border: 2px solid #000000;
+    font-family:consolas;
+    font-size: 70px;
+    height: 10vh;
+    /* UNCOMMENT TO TURN COLORS ON FOR TROUBLESHOOTING background-color: cyan;*/
+    text-align: center;
+}
+
+#strikes
+{
+    border-radius: 25px;
+    border: 2px solid #000000;
+    font-family:consolas;
+    font-size: 70px;
+    height: 10vh;
+    /* UNCOMMENT TO TURN COLORS ON FOR TROUBLESHOOTING background-color: darkgreen;*/
+    text-align: center;
+}
+
+#combo
+{
+    border-radius: 25px;
+    border: 2px solid #000000;
+    font-family:consolas;
+    font-size: 70px;
+    height: 10vh;
+    /* UNCOMMENT TO TURN COLORS ON FOR TROUBLESHOOTING background-color: gold;*/
+    text-align: center;
+}
+
+#lane_wrapper
+{
+   
+    text-align: center;
+}
