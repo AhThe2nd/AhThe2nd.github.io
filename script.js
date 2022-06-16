@@ -1,4 +1,5 @@
 alert("javascript is working!");
+var gameActive = false;
 
 // Codes used to check if a key press is a valid letter
 var letterCodes = [ "a", "b", "c", "d", "e", 
@@ -31,25 +32,36 @@ import {fetchWord} from "./functions.js";
 var activeLane;
 var activeWords = [];
 
-setInterval(addWordsOnInterval, 1000);
+setInterval(addWordsOnInterval, 800);
 
 function addWordsOnInterval(){
     fetchWord(activeWords);
-    
+    console.log(activeWords);
+
     // Generate a random lane
-    var min = 1;
-    var max = 6;
-    var latestWord = activeWords[activeWords.length - 1];
-    activeLane = Math.floor(Math.random() * (max - min) + min);
-
-    // Generate a new element
-    var newSection = document.createElement("p");
+    let min = 1;
+    let max = 6;
     
-    // Store the text as a Textnode
-    var textNode = document.createTextNode(latestWord);
+    // This if block prevents "undefined" from being written as a target word
+    if (activeWords.length > 0)
+    {
+        var latestWord = activeWords[activeWords.length - 1];
 
-    // Add the text node to the new p section
-    newSection.appendChild(textNode);
+        activeLane = Math.floor(Math.random() * (max - min) + min);
+
+        // Generate a new element
+        var newSection = document.createElement("p");
+
+        // Add CSS
+        newSection.classList.add('target_word');
+
+        // Store the text as a Textnode
+        let textNode = document.createTextNode(latestWord);
+
+        // Add the text node to the new p section
+        newSection.appendChild(textNode);
+
+    }    
 
     switch(activeLane) {
         case 1:
@@ -86,11 +98,11 @@ window.addEventListener('keydown', function (e)
     else if (e.key == "Enter")
     {
         // Select all p elements from the HTML
-        var allWords = document.querySelectorAll("p");
+        let allWords = document.querySelectorAll("p");
 
         // Check if any of the inner HTML matches the user word
         // for all p elements and remove it if it does match
-        var goodWord = false;
+        let goodWord = false;
         for (let i = 0; i < allWords.length; i++)
         {
             if (allWords[i].innerHTML == userWord)
@@ -98,7 +110,7 @@ window.addEventListener('keydown', function (e)
                 goodWord = true;
                 // Increase score by the length of the word
                 score += allWords[i].innerHTML.length;
-                this.document.querySelector("#score").innerHTML = score;
+                this.document.querySelector("#score").innerHTML = "Score" + "<br>" + score;
                 
                 // Remove the word from the screen and set the user word to empty string
                 allWords[i].remove();
