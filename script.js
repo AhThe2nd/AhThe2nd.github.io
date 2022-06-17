@@ -1,3 +1,6 @@
+// Log the version to the console
+console.log("Version 1.0");
+
 // Import the functions we need
 import {fetchWord, deleteElement} from "./functions.js";
 
