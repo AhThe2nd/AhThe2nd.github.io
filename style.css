@@ -81,7 +81,7 @@ html, body{
 
 /*This style applies to the section that displays the number of strikes*/
 #strikes{
-    height: 15vh;
+    height: 17vh;
     width: 50vw;
     font-family:consolas;
     font-size: 70px;
