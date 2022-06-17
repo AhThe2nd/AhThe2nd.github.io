@@ -3,7 +3,6 @@
 // This function gets a random word promise from the Random Words API of length 3 - 7 characters inclusive.
 export async function fetchWord(array) {
 
-    console.log('Flag #3');
     // Generate a random int between a minimum and maximum
     let word;
     var min = 3;
@@ -22,3 +21,5 @@ export async function fetchWord(array) {
 export function deleteElement(element){
   element.remove();
 }
+
+// I should have probably had more functions here and split my main game loop function into smaller bits.

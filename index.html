@@ -5,27 +5,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div id="full_box">
+        
         <div class="hide" id="retry">
             <h4 id="game_over">Game Over!</h4>
             <h4 id="final_score">Final Score: </h4>
             <h4 id="retry_button" class="retry_button">Retry</h4>
         </div>
+        
+        <div id="instructions">
+            <h1 id="rules">Rules</h3>
+            <h2> - Type the words as they fill the five lanes on screen<br>
+                 - You may type words in any order<br>
+                 - Submit a word by pressing enter<br>
+                 - If you submit a typo, you get a strike<br>
+                 - 10 strikes and the game will end<br>
+                 - The game also ends if any single lane overflows<br>
+                 - Ensure Caps Lock is off at all times!<br><br>
+               <h4 id="good_luck">GOOD LUCK!</h4>
+            </h4><br><br>
+            <h4 id="got_it" class="got_it">Got it!</h4>    
+        </div>
+        
         <div id="score">
             <h4>Type "start" and press enter to begin<br></h4>
         </div>
-          
         
+        <!-- The divs in this section are chained together to eliminate space between the elements -->
         <div id="lane_wrapper">
-            <div id="lane1">
+            <div id="lane1" class="lane">
                 <p></p>
-            </div><div id="lane2">
+            </div><div id="lane2" class="lane">
                 <p></p>
-            </div><div id="lane3">
+            </div><div id="lane3" class="lane">
                 <p></p>
-            </div><div id="lane4">
+            </div><div id="lane4" class="lane">
                 <p></p>
-            </div><div id="lane5">
+            </div><div id="lane5" class="lane">
                 <p></p>
             </div>
         </div>
@@ -35,15 +52,10 @@
         </div>
         
         <div id="strikes">
-            <h4>Strikes: </h4>
-        </div>
-        
-        <div id="combo">
-            <p></p>
-        </div>
+            <h4>Strikes<br></h4>
+        </div>    
     </div>
 
-    
     <script type="module" src="script.js" type="text/JavaScript"></script>
 </body>
 </html>
