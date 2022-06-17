@@ -212,3 +212,7 @@ html, body
     font-size: 20px;;
 }
 
+.retry_button:hover{
+    cursor: pointer;
+}
+
